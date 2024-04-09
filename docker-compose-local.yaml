@@ -1,0 +1,23 @@
+version: "3.0"
+services:
+  db:
+    container_name: "game_db"
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=game_db
+      - POSTGRES_PASSWORD=game_db
+      - POSTGRES_DB=game_db
+    ports:
+      - "5438:5432"
+    networks:
+      - custom
+
+  redis:
+    image: redis:5-alpine
+    ports:
+      - "6379:6379"
+
+networks:
+    custom:
+      driver: bridge

@@ -1,0 +1,16 @@
+[{
+  "types": [
+    {
+      "unit":"Infantry",
+      "damage":5
+    },
+    {
+      "unit":"Cavalery",
+      "damage":5
+    },
+    {
+      "unit":"Spearman",
+      "damage":5
+    }
+  ]
+}]
